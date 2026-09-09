@@ -77,7 +77,7 @@ export default function Dashboard() {
   const logIcon = (level: LogLevel) => level === 'success' ? <CheckCircle2 size={14} /> : level === 'warning' ? <AlertCircle size={14} /> : <Activity size={14} />;
 
   return (
-    <section className="section-pad dashboard-section" id="features">
+    <section className="section-pad dashboard-section" id="dashboard">
       <Reveal><div className="section-heading"><div><span className="eyebrow">04 / DATA OPERATIONS</span><h2>Your data.<br /><span>Visible. Operational.</span></h2></div><p>Make every pipeline measurable. Give teams a live, shared understanding of what is moving, what is ready and what needs attention.</p></div></Reveal>
       <Reveal delay={0.08}>
         <div className="dashboard-shell">

@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState('');
-  const items = [['Features', '#features'], ['Pricing', '#pricing'], ['FAQ', '#faq'], ['About', '#about'], ['Contact', '#contact']];
+  const items = [['Feature', '#features'], ['How it works', '#about'], ['Pricing', '#pricing'], ['FAQ', '#faq'], ['Contact', '#contact']];
 
   useEffect(() => {
     const ids = items.map(([, href]) => href.slice(1));
