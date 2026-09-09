@@ -1,3 +1,10 @@
+# Force HTTPS (canonical scheme) — uncomment host line if you only serve one domain
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
 # SPA fallback: route all requests to index.html so refreshing works
 <IfModule mod_rewrite.c>
   RewriteEngine On

@@ -40,6 +40,10 @@ import datasetManagementImg from '../assets/Dataset Management.png';
 import enterpriseArchitectureImg from '../assets/Enterprise Architecture.png';
 import dataFabricImg from '../assets/Data Fabric.png';
 import readyWhenYouAreImg from '../assets/READY WHEN YOU ARE Your data future.png';
+import marcusChenImg from '../assets/Marcus Chen.png';
+import priyaSharmaImg from '../assets/Priya Sharma.png';
+import davidOkaforImg from '../assets/David Okafor.png';
+import aiDataPreparationSectionImg from '../assets/05  AI DATA PREPARATION.png';
 export const cyan = '#43e6d2';
 export const blue = '#315cff';
 
@@ -52,7 +56,7 @@ export const IMG = {
   abstract: 'https://images.pexels.com/photos/12489187/pexels-photo-12489187.jpeg?auto=compress&cs=tinysrgb&w=1920',
   center: 'https://images.pexels.com/photos/17489157/pexels-photo-17489157.jpeg?auto=compress&cs=tinysrgb&w=940',
   transform: 'https://images.pexels.com/photos/6466143/pexels-photo-6466143.jpeg?auto=compress&cs=tinysrgb&w=940',
-  aiCircuit: 'https://images.pexels.com/photos/8108728/pexels-photo-8108728.jpeg?auto=compress&cs=tinysrgb&w=940',
+  aiCircuit: aiDataPreparationSectionImg,
   perfServer: 'https://images.pexels.com/photos/17489152/pexels-photo-17489152.jpeg?auto=compress&cs=tinysrgb&w=1920',
   portrait1: 'https://images.pexels.com/photos/7793635/pexels-photo-7793635.jpeg?auto=compress&cs=tinysrgb&w=400',
   portrait2: 'https://images.pexels.com/photos/7163384/pexels-photo-7163384.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -61,9 +65,9 @@ export const IMG = {
 };
 
 export const testimonials = [
-  { quote: 'DataWeaveX collapsed six months of integration work into three weeks. Our data fabric is finally something we can see and trust.', name: 'Marcus Chen', role: 'VP Data Engineering', company: 'Northbridge Financial', img: IMG.portrait1 },
-  { quote: 'We went from 40 disconnected sources to a single governed layer. AI readiness went from aspirational to measurable.', name: 'Priya Sharma', role: 'Head of AI Platform', company: 'Meridian Health', img: IMG.portrait2 },
-  { quote: 'The transformation engine alone saved my team thousands of hours. Pipelines that used to break weekly now run without intervention.', name: 'David Okafor', role: 'Director of Data Operations', company: 'Atlas Logistics', img: IMG.portrait3 },
+  { quote: 'DataWeaveX collapsed six months of integration work into three weeks. Our data fabric is finally something we can see and trust.', name: 'Marcus Chen', role: 'VP Data Engineering', company: 'Northbridge Financial', img: marcusChenImg },
+  { quote: 'We went from 40 disconnected sources to a single governed layer. AI readiness went from aspirational to measurable.', name: 'Priya Sharma', role: 'Head of AI Platform', company: 'Meridian Health', img: priyaSharmaImg },
+  { quote: 'The transformation engine alone saved my team thousands of hours. Pipelines that used to break weekly now run without intervention.', name: 'David Okafor', role: 'Director of Data Operations', company: 'Atlas Logistics', img: davidOkaforImg },
 ];
 
 export const chartData = [
