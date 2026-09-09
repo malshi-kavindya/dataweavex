@@ -17,11 +17,8 @@ button { border: 0; cursor: pointer; }
 .cyan-text { color: var(--cyan); }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 800; letter-spacing: .08em; white-space: nowrap; }
 .brand-accent { color: var(--cyan); }
-.brand-mark { position: relative; display: inline-block; width: 25px; height: 25px; border: 1px solid var(--cyan); border-radius: 50%; transform: rotate(-24deg); }
-.brand-mark::before, .brand-mark::after, .brand-mark i { content: ''; position: absolute; display: block; background: var(--cyan); border-radius: 4px; }
-.brand-mark::before { width: 8px; height: 1px; top: 7px; left: 4px; box-shadow: 9px 9px 0 var(--cyan); }
-.brand-mark::after { width: 1px; height: 8px; left: 8px; top: 4px; box-shadow: 9px 9px 0 var(--cyan); }
-.brand-mark i { width: 4px; height: 4px; left: 10px; top: 10px; border-radius: 50%; }
+.brand-logo { height: 30px; width: auto; }
+.brand-compact .brand-logo { height: 22px; }
 .nav-wrap { position: absolute; z-index: 30; top: 18px; width: 100%; padding: 0 22px; }
 .nav-shell { display: flex; align-items: center; justify-content: space-between; max-width: 1270px; margin: auto; padding: 11px 13px 11px 18px; border: 1px solid rgba(122, 159, 161, .24); border-radius: 12px; background: rgba(5, 8, 9, .58); backdrop-filter: blur(16px); }
 .nav-links { display: flex; gap: 28px; margin-left: auto; margin-right: 32px; }
@@ -66,7 +63,7 @@ p { color: var(--muted); font-size: 15px; line-height: 1.8; }
 
 /* === SIGNAL STRIP === */
 .signal-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--panel); }
-.signal-strip > div { display: flex; align-items: center; gap: 13px; min-height: 84px; padding: 16px 3vw; border-right: 1px solid var(--border); color: var(--muted); font: 10px var(--mono); line-height: 1.5; }.signal-strip > div:last-child { border: 0; }.signal-strip svg { color: var(--cyan); flex: 0 0 auto; }.signal-strip b { display: block; color: #dce5e3; font-weight: 500; }
+.signal-strip > div { display: flex; align-items: center; gap: 13px; min-height: 84px; padding: 16px 3vw; border-right: 1px solid var(--border); color: var(--muted); font: 10px var(--mono); line-height: 1.5; }.signal-strip > div:last-child { border: 0; }.signal-strip svg { color: var(--cyan); flex: 0 0 auto; }.signal-strip img { width: 20px; height: 20px; flex: 0 0 auto; object-fit: contain; }.signal-strip b { display: block; color: #dce5e3; font-weight: 500; }
 
 /* === PRODUCT CARDS === */
 .product-cards-section { max-width: 1320px; margin: 0 auto; padding: 120px 42px; }
@@ -90,6 +87,7 @@ p { color: var(--muted); font-size: 15px; line-height: 1.8; }
 .source-card { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 60px; min-height: 152px; padding: 18px; border: 1px solid var(--border); background: linear-gradient(145deg, #121b1d, #0a1012); transition: transform .3s, border-color .3s, background .3s; }
 .source-card:hover { transform: translateY(-6px); border-color: var(--cyan); background: #122022; }
 .source-card svg:first-child { color: var(--cyan); }
+.source-card img { width: 32px; height: 32px; object-fit: contain; }
 .source-card svg:last-child { position: absolute; right: 16px; bottom: 16px; color: #708084; }
 .source-card span { font: 11px var(--mono); color: #c9d3d0; letter-spacing: .1em; }
 .fabric-bridge { display: grid; grid-template-columns: 1fr 2fr 1fr; align-items: center; gap: 0; margin-top: 15px; }
@@ -255,6 +253,7 @@ p { color: var(--muted); font-size: 15px; line-height: 1.8; }
 .feature-card:hover { transform: translateY(-5px); border-color: rgba(67,230,210,.65); background: #101b1d; }
 .feature-card > div { display: flex; justify-content: space-between; color: var(--cyan); }
 .feature-number { color: #68787a; font: 10px var(--mono); }
+.feature-icon { width: 22px; height: 22px; object-fit: contain; }
 .feature-card h3 { margin-top: auto; font-size: 15px; }
 .feature-card p { margin-top: 9px; font-size: 11px; line-height: 1.55; }
 .feature-card > svg { position: absolute; right: 17px; bottom: 17px; color: #809092; }

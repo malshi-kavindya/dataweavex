@@ -16,12 +16,35 @@ import {
   Sparkles,
   Zap,
 } from 'lucide-react';
-
+import heroImg from '../assets/Hero Section Image.png';
+import fabricImg from '../assets/Data Fabric.png';
+import transformImg from '../assets/Transformation Engine.png';
+import integrationImg from '../assets/Enterprise Integration2.png';
+import enterpriseIntegration2Img from '../assets/Enterprise Integration.png';
+import databasesImg from '../assets/DATABASES.png';
+import cloudImg from '../assets/CLOUD (2).png';
+import erpImg from '../assets/ERP _ CRM.png';
+import dataLakeImg from '../assets/DATA LAKE.png';
+import apiImg from '../assets/API.png';
+import warehouseImg from '../assets/WAREHOUSE.png';
+import aiDataFabricImg from '../assets/AI Data Fabric.png';
+import dataTransformationImg from '../assets/Data Transformation.png';
+import dataFederationImg from '../assets/Data Federation.png';
+import dataEnrichmentImg from '../assets/Data Enrichment.png';
+import pipelineOrchestrationImg from '../assets/Pipeline Orchestration.png';
+import acceleratedProcessingImg from '../assets/Accelerated Processing.png';
+import dataQualityImg from '../assets/Data Quality.png';
+import aiDataPreparationImg from '../assets/AI Data Preparation.png';
+import dataOperationsImg from '../assets/Data Operations.png';
+import datasetManagementImg from '../assets/Dataset Management.png';
+import enterpriseArchitectureImg from '../assets/Enterprise Architecture.png';
+import dataFabricImg from '../assets/Data Fabric.png';
+import readyWhenYouAreImg from '../assets/READY WHEN YOU ARE Your data future.png';
 export const cyan = '#43e6d2';
 export const blue = '#315cff';
 
 export const IMG = {
-  hero: 'https://images.pexels.com/photos/17323801/pexels-photo-17323801.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  hero: heroImg,
   card1: 'https://images.pexels.com/photos/17489163/pexels-photo-17489163.jpeg?auto=compress&cs=tinysrgb&w=940',
   card2: 'https://images.pexels.com/photos/8640331/pexels-photo-8640331.jpeg?auto=compress&cs=tinysrgb&w=940',
   card3: 'https://images.pexels.com/photos/37730211/pexels-photo-37730211.jpeg?auto=compress&cs=tinysrgb&w=940',
@@ -34,7 +57,7 @@ export const IMG = {
   portrait1: 'https://images.pexels.com/photos/7793635/pexels-photo-7793635.jpeg?auto=compress&cs=tinysrgb&w=400',
   portrait2: 'https://images.pexels.com/photos/7163384/pexels-photo-7163384.jpeg?auto=compress&cs=tinysrgb&w=400',
   portrait3: 'https://images.pexels.com/photos/5583989/pexels-photo-5583989.jpeg?auto=compress&cs=tinysrgb&w=400',
-  cta: 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  cta: readyWhenYouAreImg,
 };
 
 export const testimonials = [
@@ -67,27 +90,27 @@ export const sourceData = [
 ];
 
 export const sourceNodes = [
-  { label: 'DATABASES', icon: Database, x: 12, y: 22 },
-  { label: 'CLOUD', icon: Cloud, x: 22, y: 73 },
-  { label: 'ERP / CRM', icon: Boxes, x: 78, y: 22 },
-  { label: 'DATA LAKE', icon: Server, x: 88, y: 73 },
+  { label: 'DATABASES', img: databasesImg, x: 12, y: 22 },
+  { label: 'CLOUD', img: cloudImg, x: 22, y: 73 },
+  { label: 'ERP / CRM', img: erpImg, x: 78, y: 22 },
+  { label: 'DATA LAKE', img: dataLakeImg, x: 88, y: 73 },
 ];
 
-export type Feature = [string, string, string, LucideIcon];
+export type Feature = [string, string, string, string];
 
 export const features: Feature[] = [
-  ['01', 'AI Data Fabric', 'Connect distributed information into one intelligent layer.', Network],
-  ['02', 'Enterprise Integration', 'Meet data where it lives: cloud, on-prem, APIs and apps.', Globe2],
-  ['03', 'Data Transformation', 'Turn fragmented source data into consistent, usable assets.', Settings2],
-  ['04', 'Data Federation', 'Query across environments without moving everything first.', GitBranch],
-  ['05', 'Data Enrichment', 'Add context, signals and meaning to every record.', Sparkles],
-  ['06', 'Pipeline Orchestration', 'Automate dependable workflows from source to dataset.', Layers3],
-  ['07', 'Accelerated Processing', 'Process high-volume workloads with speed and control.', Zap],
-  ['08', 'Data Quality', 'Make trust measurable with continuous validation.', ShieldCheck],
-  ['09', 'AI Data Preparation', 'Deliver structured, governed data to every model.', BrainCircuit],
-  ['10', 'Data Operations', 'See what is moving, what is ready and what needs attention.', Radar],
-  ['11', 'Dataset Management', 'Create reusable, discoverable data products for teams.', Database],
-  ['12', 'Enterprise Architecture', 'Build a resilient data foundation for the next era.', Code2],
+  ['01', 'AI Data Fabric', 'Connect distributed information into one intelligent layer.', aiDataFabricImg],
+  ['02', 'Enterprise Integration', 'Meet data where it lives: cloud, on-prem, APIs and apps.', enterpriseIntegration2Img],
+  ['03', 'Data Transformation', 'Turn fragmented source data into consistent, usable assets.', dataTransformationImg],
+  ['04', 'Data Federation', 'Query across environments without moving everything first.', dataFederationImg],
+  ['05', 'Data Enrichment', 'Add context, signals and meaning to every record.', dataEnrichmentImg],
+  ['06', 'Pipeline Orchestration', 'Automate dependable workflows from source to dataset.', pipelineOrchestrationImg],
+  ['07', 'Accelerated Processing', 'Process high-volume workloads with speed and control.', acceleratedProcessingImg],
+  ['08', 'Data Quality', 'Make trust measurable with continuous validation.', dataQualityImg],
+  ['09', 'AI Data Preparation', 'Deliver structured, governed data to every model.', aiDataPreparationImg],
+  ['10', 'Data Operations', 'See what is moving, what is ready and what needs attention.', dataOperationsImg],
+  ['11', 'Dataset Management', 'Create reusable, discoverable data products for teams.', datasetManagementImg],
+  ['12', 'Enterprise Architecture', 'Build a resilient data foundation for the next era.', enterpriseArchitectureImg],
 ];
 
 export const faqs: [string, string][] = [
@@ -104,9 +127,9 @@ export const faqs: [string, string][] = [
 ];
 
 export const productCards = [
-  { tag: '01 / DATA FABRIC', title: 'Data Fabric', desc: 'Connect every enterprise source into one intelligent, governed layer.', img: IMG.card1, },
-  { tag: '02 / TRANSFORMATION', title: 'Transformation Engine', desc: 'Turn raw, fragmented data into structured, AI-ready assets.', img: IMG.card2,  },
-  { tag: '03 / INTEGRATION', title: 'Enterprise Integration', desc: 'Link ERP, CRM, cloud, APIs and warehouses without the complexity.', img: IMG.card3,},
+  { tag: '01 / DATA FABRIC', title: 'Data Fabric', desc: 'Connect every enterprise source into one intelligent, governed layer.', img: fabricImg, },
+  { tag: '02 / TRANSFORMATION', title: 'Transformation Engine', desc: 'Turn raw, fragmented data into structured, AI-ready assets.', img: transformImg,  },
+  { tag: '03 / INTEGRATION', title: 'Enterprise Integration', desc: 'Link ERP, CRM, cloud, APIs and warehouses without the complexity.', img: integrationImg,},
 ];
 
 export type LogLevel = 'info' | 'success' | 'warning';
