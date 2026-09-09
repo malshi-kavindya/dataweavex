@@ -10,10 +10,13 @@ export default function Hero() {
       <div className="hero-bg" style={{ backgroundImage: `url(${IMG.hero})` }} />
       <div className="hero-overlay" />
       <div className="hero-content">
-        <Reveal><span className="eyebrow cyan-text">AI DATA FABRIC / TRANSFORMATION PLATFORM</span></Reveal>
-        <Reveal delay={0.08}><h1>Weave your<br /><em>data</em> into<br />intelligence.</h1></Reveal>
-        <Reveal delay={0.16}><p>An AI-powered data fabric for connecting, transforming, enriching and preparing enterprise data for analytics and AI.</p></Reveal>
-        <Reveal delay={0.22}><div className="hero-actions"><a className="button button-primary" href="#features">Explore platform <ArrowRight size={16} /></a><Link className="button button-quiet" to="/product"><Play size={15} /> View product</Link></div></Reveal>
+        <Reveal><span className="eyebrow cyan-text">ONE INTELLIGENT FABRIC FOR YOUR ENTIRE DATA LANDSCAPE</span></Reveal>
+        <Reveal delay={0.08}><h1>Weave your data into<br /><em>something smarter.</em></h1></Reveal>
+        <Reveal delay={0.16}><p className="hero-lead">One intelligent fabric for your entire data landscape.</p></Reveal>
+        <Reveal delay={0.16}><p>Data lives everywhere — across databases, cloud platforms, applications, APIs, warehouses, and data lakes. DataWeaveX brings it together, transforms it, enriches it, and makes it ready for the analytics and AI that move your business forward.</p></Reveal>
+        <Reveal delay={0.22}><span className="hero-tagline"><b>Connect.</b><b>Transform.</b><b>Enrich.</b><b>Accelerate.</b></span></Reveal>
+        <Reveal delay={0.22}><div className="hero-actions"><a className="button button-primary" href="#features">Explore the Platform <ArrowRight size={16} /></a><Link className="button button-quiet" to="/product"><Play size={15} /> See How It Works</Link></div></Reveal>
+        <Reveal delay={0.28}><div className="hero-stats"><span>10+ Data Sources</span><i /><span>Real-Time Pipelines</span><i /><span>AI-Ready Data</span></div></Reveal>
       </div>
       <div className="hero-floats">
         <MetricCard className="metric-a" label="Connected sources" value="128" note="↑ 12.4% this month" />
